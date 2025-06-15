@@ -15,9 +15,10 @@
 }
 
 .top-header {
+    display: flex;
+    justify-content: center;
     height: 50px;
     background-color: rgba(51, 51, 51, 1);
-
     color: white;
 }
 
@@ -29,7 +30,6 @@
 
 .header-left {
     display: flex;
-    padding-top: 15px;
     gap: 12px;
 }
 
@@ -47,8 +47,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding-top: 15px;
-    gap: 20px;
 
 
 }
@@ -58,4 +56,139 @@
     align-items: center;
     gap: 15px;
     padding-right: 63px;
+}
+
+.yldyi-header {
+    margin-top: 30px;
+}
+
+.yldyi-header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.yldyi-header1 .input input {
+    width: 870px;
+    border: none;
+    margin-top: 8px;
+    border-bottom: 2px solid rgba(149, 109, 132, 1);
+    outline: none;
+    padding-left: 40px;
+
+
+}
+
+.yldyi-header1 .input img {
+    position: absolute;
+    left: 76%;
+}
+
+.imgs p {
+    margin-top: 22px;
+    margin-bottom: 14px;
+}
+
+.nav {
+    width: 824px;
+    margin-left: 19%;
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    color: rgba(149, 109, 132, 1);
+}
+
+.nav li {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav li:hover {
+    color: rgba(149, 109, 132, 1);
+}
+
+
+
+
+
+/* фуутеер....... */
+
+footer {
+    background-color: rgba(51, 51, 51, 1);
+
+}
+
+.flower-footer {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.flower-footer .links a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    /* margin-left: 10%; */
+}
+
+.flower-footer .links a:hover {
+    color: rgba(149, 109, 132, 1);
+    /* цвет M‑Bank */
+}
+
+.flower-footer .cards {
+    margin-top: 30px;
+    display: flex;
+
+    gap: 20px;
+}
+
+.flower-footer .card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background: #fafafa;
+    width: 200px;
+}
+
+.flower-footer .card img {
+    max-width: 60px;
+    margin-right: 15px;
+}
+
+.flower-footer .card-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #009C4D;
+    /* M‑Bank цвет */
+}
+
+.flower-footer .card-info p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #333;
 }
