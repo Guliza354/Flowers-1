@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="top-header">
             <div class="header container">
 
                 <div class="header-left">
                     <span>Валюта</span><select>
-                        <option value="">ГРН</option>
+                        <option value="">СОМ</option>
                         <option value="">РУБЛЬ</option>
                     </select>
 
@@ -26,7 +28,7 @@
                     </select>
 
                     <span>Город</span> <select>
-                        <option value="">Киев</option>
+                        <option value="">Бишкек</option>
                         <option value="">Москва</option>
                     </select>
                 </div>
@@ -43,26 +45,27 @@
                         <img src="/svg/contact.svg" alt="">
                         <span>Контакты</span>
                     </div>
-                    <span class="entrance"><img src="/svg/human.svg" alt="">Вход <img src="/svg/line.svg" alt="">
-                        Регистрация</span>
+                    <span class="entrance"><img src="/svg/human.svg" alt=""></span> <span>Вход</span> <img
+                        src="/svg/line.svg" alt="">
+                    <span>Регистрация</span>
                 </div>
 
             </div>
         </div>
         <div class="yldyi-header container">
             <div class="yldyi-header1">
-                <img src="./svg/flower.svg" alt="">
+                <img src="/svg/flower.svg" alt="">
                 <div class="input">
                     <input type="text" placeholder="Поиск по товаром">
-                    <img src="./svg/search.svg" alt="">
+                    <img src="/svg/search.svg" alt="">
                 </div>
                 <div class="imgs">
-                    <img src="./svg/contac..svg" alt="">
-                    <img src="./svg/instagram.svg" alt="">
-                    <img src="./svg/facebook.svg" alt="">
+                    <img src="/svg/contac..svg" alt="">
+                    <img src="/svg/instagram.svg" alt="">
+                    <img src="/svg/facebook.svg" alt="">
                     <p>+38 (067) 829 30 30</p>
-                    <img src="./svg/heart1.svg" alt="">
-                    <img src="./svg/bag.svg" alt="">
+                    <img src="/svg/heart1.svg" alt="">
+                    <img src="/svg/bag.svg" alt="">
                 </div>
 
             </div>
@@ -71,15 +74,375 @@
                     <li>Каталог товаров</li>
 
                 </a>
-                <li>Форум</li>
-                <li>Отзывы</li>
-                <li>Акции</li>
-                <li>Новости</li>
-                <li>Информация</li>
+                <li id="forum">Форум</li>
+                <li id="otzuf">Отзывы</li>
+                <li id="akcia">Акции</li>
+                <li id="new">Новости</li>
+                <li id="info">Информация</li>
             </div>
         </div>
     </header>
-    <footer>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1> Добро пожаловать в мир цветов и нежности!</h1>
+            <p>Создаём букеты с любовью и доставкой по Бишкеку 🌷</p>
+            <!-- <button onclick="location.href='#catalog'">Заказать сейчас</button> -->
+        </div>
+    </section>
+
+    <section class="features container">
+
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+            <div class="feature-title">Доставки наших букетов</div>
+            <div class="feature-desc">Безупречное качество обслуживания и доставка в любую точку города</div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-video"></i></div>
+            <div class="feature-title">Видео отчеты клиентов</div>
+            <div class="feature-desc">Наши счастливые клиенты с букетами от Flowers-Bishkek</div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-gift"></i></div>
+            <div class="feature-title">Подарок каждому клиенту</div>
+            <div class="feature-desc">К каждому заказу мы прилогаем комплимент от компании</div>
+        </div>
+
+    </section>
+
+    <main>
+        <h1>Акции</h1>
+        <div class="flower-grid">
+
+            <!-- Карточка 1 -->
+            <div class="card">
+                <img src="https://content2.flowwow-images.com/data/flowers/524x524/73/1694988832_29727173.jpg"
+                    alt="Роза" />
+                <div class="card-info">
+                    <h3>Роза</h3>
+                    <p>Цена: 4999 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="card">
+                <img src="https://kyzyl.flowlove.ru/wp-content/themes/init/catalog/images/catalog/rozovyye-tyulpany-medium.webp"
+                    alt="Тюльпан" />
+                <div class="card-info">
+                    <h3>Тюльпан</h3>
+                    <p>Цена: 2500 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card">
+                <img src="https://www.roza4u.ru/image/cache/catalog/Liliya_Aziatka_Rozovaya_/Liliya_Aziatka_Rozovaya_1-1400x1400.jpg"
+                    alt="Лилия" />
+                <div class="card-info">
+                    <h3>Лилия</h3>
+                    <p>Цена: 2349 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="card">
+                <img src="https://content2.flowwow-images.com/data/flowers/524x524/74/1750593012_75431674.jpg"
+                    alt="Пион" />
+                <div class="card-info">
+                    <h3>Пион</h3>
+                    <p>Цена: 5900 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="card">
+                <img src="https://www.beauty-flowers-moscow.ru/wp-content/uploads/2020/11/101-orkhideia-v-korzine.jpg"
+                    alt="Орхидея" />
+                <div class="card-info">
+                    <h3>Орхидея</h3>
+                    <p>Цена: 2500 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="card">
+                <img src="https://kamelia-tver.ru/wp-content/uploads/2022/07/buket_2024-1-scaled.jpeg" alt="Ромашка" />
+                <div class="card-info">
+                    <h3>Ромашка</h3>
+                    <p>Цена: 1999 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="card">
+                <img src="https://content2.flowwow-images.com/data/flowers/524x524/52/1736157569_88670852.jpg"
+                    alt="Гортензия" />
+                <div class="card-info">
+                    <h3>Гортензия</h3>
+                    <p>Цена: 4999 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="card">
+                <img src="https://dicentra.ua/assets/images/products/5475/0c176b24384bff11323ad28c8e4517b00585224c.jpg"
+                    alt="Нарцисс" />
+                <div class="card-info">
+                    <h3>Нарцисс</h3>
+                    <p>Цена: 1599 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <main>
+        <h1>Сезонные</h1>
+        <div class="flower-grid">
+
+            <!-- Карточка 1 -->
+            <div class="card">
+                <img src="https://buketland.ua/image/cache/catalog/flowers/may2021/buket-tsvetov-zhasmin-030344-2-800x800.jpg"
+                    alt="Жасмин" />
+                <div class="card-info">
+                    <h3>Жасмин</h3>
+                    <p>Цена: 5500 сом</p>
+                    <button class="order-btn"> Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="card">
+                <img src="https://53flowers.com/wp-content/uploads/2022/08/b6e7fb36ac67825a3119cffca6351764.jpg" alt="">
+                <div class="card-info">
+                    <h3>Фрезия</h3>
+                    <p>Цена: 3500 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card">
+                <img src="https://static.insales-cdn.com/images/products/1/5080/156824536/070405_%D0%B0%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D1%8B_%D1%81%D0%B8%D0%BD%D0%B8%D0%B5__1_.jpg"
+                    alt="Анемона" />
+                <div class="card-info">
+                    <h3>Анемона</h3>
+                    <p>Цена: 2400 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="card">
+                <img src="https://www.florissimo-shop.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c4e/hcwngzxldrwiuzwq69oqzn31vnssblgq/512_512_1/b44045e8-3e47-486d-b9a0-938620f12d1a.webp"
+                    alt="">
+                <div class="card-info">
+                    <h3>Лаванда</h3>
+                    <p>Цена: 4500 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="card">
+                <img src="https://content2.flowwow-images.com/data/flowers/524x524/38/1730818147_16121238.jpg"
+                    alt="Хризантема" />
+                <div class="card-info">
+                    <h3>Хризантема</h3>
+                    <p>Цена: 6000 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="card">
+                <img src="https://gorod-buketov.ru/wp-content/uploads/2023/02/1612557365_48100352.jpeg" alt="">
+                <div class="card-info">
+                    <h3>Ирис</h3>
+                    <p>Цена: 3500 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="card">
+                <img src="https://dakotaflora.com/assets/images/products/2174/large/dbffc42596b9984aa5adbb29d7834939eb4ec21c.jpg"
+                    alt="Гвоздика" />
+                <div class="card-info">
+                    <h3>Гвоздика</h3>
+                    <p>Цена: 4500 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="card">
+                <img src="https://content2.flowwow-images.com/data/flowers/1000x1000/64/1662911000_27992264.jpg"
+                    alt="Лотос" />
+                <div class="card-info">
+                    <h3>Лотос</h3>
+                    <p>Цена: 2900 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <main>
+        <h1>Подарки</h1>
+        <div class="flower-grid">
+
+            <!-- Карточка 1 -->
+            <div class="card">
+                <img src="https://cdn-sh1.vigbo.com/shops/13467/products/21970331/images/3-d041df8ec2d6c48a374dee20505c31f8.JPG"
+                    alt="Шоколадный торт" />
+                <div class="card-info">
+                    <h3>Шоколадный торт</h3>
+                    <p>Цена: 1200 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Красный бархат" />
+                <div class="card-info">
+                    <h3>Красный бархат</h3>
+                    <p>Цена: 1400 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card">
+                <img src="https://dobryninsky.ru/upload/iblock/a87/a874e2827e060c6151c3f12f4f5155fa.jpg"
+                    alt="Тирамису" />
+                <div class="card-info">
+                    <h3>Тирамису</h3>
+                    <p>Цена: 1300 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="card">
+                <img src="https://avetort.ru/images/cms/data/torty/svadebnye/po_dekoru/frukty/tort_fruktovyj_144613.jpg"
+                    alt="Фруктовый торт" />
+                <div class="card-info">
+                    <h3>Фруктовый торт</h3>
+                    <p>Цена: 1250 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187" alt="Медовик" />
+                <div class="card-info">
+                    <h3>Медовик</h3>
+                    <p>Цена: 1100 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="card">
+                <img src="https://www.klubnichka-tort.ru/upload/iblock/22d/klubnika-s-romawkami-2000-krem-chiz.jpg"
+                    alt="Клубничный чизкейк" />
+                <div class="card-info">
+                    <h3>Клубничный чизкейк</h3>
+                    <p>Цена: 1350 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="card">
+                <img src="https://lavandersweets.ru/wp-content/uploads/2014/10/IMG_7634-1.jpg" alt="Йогуртовый торт" />
+                <div class="card-info">
+                    <h3>Йогуртовый торт</h3>
+                    <p>Цена: 1000 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="card">
+                <img src="https://cdn-sh1.vigbo.com/shops/13467/products/21954312/images/3-123dffa4aaad1cb2b64817c9f3f37c83.jpg"
+                    alt="Муссовый торт" />
+                <div class="card-info">
+                    <h3>Муссовый торт</h3>
+                    <p>Цена: 1450 сом</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <section class="features container">
+
+        <div class="feature-item">
+            <img src="https://st4.depositphotos.com/13193658/30600/i/450/depositphotos_306006214-stock-photo-cropped-view-bearded-delivery-man.jpg"
+                alt="Доставка" class="feature-img">
+            <div class="feature-title">Фото доставок наших букетов</div>
+            <div class="feature-desc">Безупречное качество обслуживания и доставка в любую точку города</div>
+            <div class="bell-icon"><i class="fas fa-bell"></i></div>
+        </div>
+
+        <div class="feature-item">
+            <img src="https://diploms.kiev.ua/wp-content/uploads/2021/09/data-3938447_1920.jpg" alt="Видео отчёты"
+                class="feature-img">
+            <div class="feature-title">Видео отчёты клиентов</div>
+            <div class="feature-desc">Наши счастливые клиенты с букетами от Flowers-Bishkek</div>
+            <div class="bell-icon"><i class="fas fa-bell"></i></div>
+        </div>
+
+        <div class="feature-item">
+            <img src="https://1cvetsklad.ru/upload/resize_cache/iblock/fe2/600_600_140cd750bba9870f18aada2478b24840a/n2ea5ya0fkau8toq5ipc2uei3no904sw.jpg"
+                alt="Подарок" class="feature-img">
+            <div class="feature-title">Подарок каждому клиенту</div>
+            <div class="feature-desc">К каждому заказу мы прилагаем комплимент от компании</div>
+            <div class="bell-icon"><i class="fas fa-bell"></i></div>
+        </div>
+
+    </section>
+
+
+
+    <section class="contact-section">
+        <div class="contact-overlay">
+            <div class="contact-content">
+                <h2>Как заказать?</h2>
+                <p>Мы находимся по адресу Туруcбекова 109/1, Бишкек. Оформить заказ можно по телефону или WhatsApp.</p>
+
+                <div class="contact-info">
+                    <p><strong>📍 Адрес:</strong> Туруcбекова 109/1, Бишкек</p>
+                    <p><strong>📞 Телефон:</strong> <a href="tel:+996550787996">+996 550 789 996</a></p>
+                    <p><strong>📩 WhatsApp:</strong> <a href="https://wa.me/996550787996" target="_blank">Написать
+                            нам</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <footer>
         <div class="flower-footer">
             <img src="./svg/logo.svg" alt="">
             <div class="links">
@@ -111,13 +474,9 @@
 
         </div>
     </footer>
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/home.js"></script>
+    <script src="/pages/Forum/forum.js"></script>
 </body>
 
 </html>
