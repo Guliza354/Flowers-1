@@ -1,78 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="katalog.css">
 </head>
+
 <body>
-    <header>
-        <div class="top-header">
-            <div class="header container">
+  <header>
+    <div class="top-header">
+      <div class="header container">
 
-                <div class="header-left">
-                    <span>Валюта</span><select>
-                        <option value="">ГРН</option>
-                        <option value="">РУБЛЬ</option>
-                    </select>
+        <div class="header-left">
+          <span>Валюта</span><select>
+            <option value="">СОМ</option>
+            <option value="">РУБЛЬ</option>
+          </select>
 
-                    <span>Язык</span><select>
-                        <option value="">RU</option>
-                        <option value="">ENG</option>
-                    </select>
+          <span>Язык</span><select>
+            <option value="">RU</option>
+            <option value="">ENG</option>
+          </select>
 
-                    <span>Город</span> <select>
-                        <option value="">Киев</option>
-                        <option value="">Москва</option>
-                    </select>
-                </div>
-                <div class="header-right">
-                    <div>
-                        <img src="../../svg/heart1.svg" alt="">
-                        <span>Закладки</span>
-                    </div>
-                    <div>
-                        <img src="/svg/car.svg" alt="">
-                        <span>Доставка и оплата</span>
-                    </div>
-                    <div>
-                        <img src="/svg/contact.svg" alt="">
-                        <span>Контакты</span>
-                    </div>
-                    <span class="entrance"><img src="/svg/human.svg" alt="">Вход <img src="/svg/line.svg" alt="">
-                        Регистрация</span>
-                </div>
-
-            </div>
+          <span>Город</span> <select>
+            <option value="">Киев</option>
+            <option value="">Москва</option>
+          </select>
         </div>
-        <div class="yldyi-header container">
-            <a href="../../home.html">
-                <img src="../../svg/flower.svg" alt="">
+        <div class="header-right">
+          <div>
+            <img src="/Flowers-1/svg/heart.svg" alt="">
+            <span>Закладки</span>
+          </div>
+          <div>
+            <img src="/Flowers-1/svg/car.svg" alt="">
+            <span>Доставка и оплата</span>
+          </div>
+          <div>
+            <img src="/Flowers-1/svg/contact.svg" alt="">
+            <span><a href="https://wa.me/755152333"></a> Контакты</span>
+          </div>
+          <span class="entrance"><img src="/Flowers-1/svg/human.svg" alt="">Вход <img src="/Flowers-1/svg/line.svg"
+              alt="">
+            Регистрация</span>
+        </div>
 
-            </a>
-            <div class="div">
-                <input type="text" placeholder="Поиск по товаром">
-                <img src="./svg/search.svg" alt="">
-            </div>
-            <div class="imgs">
-                <img src="./svg/contac..svg" alt="">
-                <img src="./svg/instagram.svg" alt="">
-                <img src="./svg/facebook.svg" alt="">
-                <p>+38 (067) 829 30 30</p>
-                <img src="./svg/heart1.svg" alt="">
-                <img src="./svg/bag.svg" alt="">
-            </div>
-            <div class="nav">
-                <a href="./pages/Katalog/katalog.html">
-                    <li>Каталог товаров</li>
+      </div>
+    </div>
+    <div class="yldyi-header container">
+      <div class="yldyi-header1">
+        <a href="/Flowers-1/home.html">
+          <img src="/Flowers-1/svg/flower.svg" alt="">
+        </a>
 
+        <div class="input">
+          <input type="text" placeholder="Поиск по товаром">
+          <img src="/Flowers-1/svg/search.svg" alt="">
+        </div>
+        <div class="imgs">
+          <img src="/Flowers-1/svg/contac..svg" alt="">
+          <img src="/Flowers-1/svg/instagram.svg" alt="">
+          <img src="/Flowers-1/svg/facebook.svg" alt="">
+          <p>+38 (067) 829 30 30</p>
+          <img src="/Flowers-1/svg/heart1.svg" alt="">
+
+          <img src="/Flowers-1/svg/bag.svg" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="nav">
+      <a href="">
+        <li>Каталог товаров</li>
+      </a>
+      <li>Форум</li>
+      <li>Отзывы</li>
+      <li>Акции</li>
+      <li>Новости</li>
+      <li>Информация</li>
+    </div>
+    </div>
+  </header>
+
+
+  <h1>Каталог контейнеров</h1>
+  <div class="catalog-container">
+    <aside class="sidebar">
+      <h2>Букеты</h2>
+      <ul id="categoryList">
+        <li class="active" onclick="filterCategory('all')">Букет</li>
+        <li onclick="filterCategory('альстромерии')">Букеты из альстромерии</li>
+        <li onclick="filterCategory('ризуля')">Букеты из ризулий</li>
+        <li onclick="filterCategory('пионы')">Букеты из пионовидных</li>
+        <li onclick="filterCategory('орхидей')">Букеты из орхидей</li>
+        <li onclick="filterCategory('лилий')">Букеты из лилий</li>
+        <li onclick="filterCategory('ризуля')">Букеты из ризулий</li>
+        <li onclick="filterCategory('орхидей')">Букеты из орхидей</li>
+        <li onclick="filterCategory('альстромерии')">Букеты из альстромерии</li>
+        <li onclick="filterCategory('лилий')">Букеты из лилий</li>
+        <li onclick="filterCategory('роз')">Букет из роз</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="filters">
+        <label style="margin-left: 100px;">Кому:
+          <select id="filterFor">
+            <option value="">Все</option>
+            <option value="маме">Маме</option>
+            <option value="папе">Папе</option>
+            <option value="сестре">Сестре</option>
+          </select>
+        </label>
+
+        <label>По цвету:
+          <select id="filterColor">
+            <option value="">Все</option>
+            <option value="розовые">Розовые</option>
+            <option value="красные">Красные</option>
+            <option value="белые">Белые</option>
+          </select>
+        </label>
+
+        <label>Повод:
+          <select id="filterReason">
+            <option value="">Все</option>
+            <option value="8 марта">8 марта</option>
+            <option value="день рождения">День рождения</option>
+            <option value="без повода">Без повода</option>
+          </select>
+        </label>
+
+        <label style="margin-left: 100px;">Сортировка:
+          <select id="sortOption">
+            <option value="популярные">Популярные</option>
+            <option value="новые">Новые</option>
+            <option value="дорогие">Дорогие</option>
+          </select>
+        </label>
+      </div>
+
+
+      <div class="product-grid" id="productGrid">
+        <!-- Товары -->
+
+        <div class="way">
+          <img
+            src="/Flowers-1/pages/Katalog/img/ee5a3a81329c959a391b519f4c12094e-ilustra-ccedil-atilde-o-em-preto-e-branco-do-ramo-das-flores-by-vexels 1.png"
+            alt="">
+        </div>
+
+
+
+        <div class="product-card" data-category="роз" data-color="красные" data-for="маме" data-reason="8 марта">
+          <img src="https://rus-buket.ru/files/icons/icon-3157_0.png" alt="101 роза">
+          <div class="stars">★★★★★</div>
+          <p class="title">101 красная роза</p>
+          <p class="skidka">2800 сом</p>
+          <p class="price">2280 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html?title=101%20красная%20роза&price=2280&img=https://rus-buket.ru/files/icons/icon-3157_0.png">Быстрый заказ</a>
+
+        </div>
+
+        <div class="product-card" data-category="пионы" data-color="розовые" data-for="сестре"
+          data-reason="день рождения">
+          <img src="https://rus-buket.ru/files/icons/icon-6980.png">
+          <div class="stars">★★★★★</div>
+          <p class="title">25 розовых пионовидных роз</p>
+          <p class="skidka">2800 сом</p>
+          <p class="price">1680 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="альстромерии" data-color="белые" data-for="маме"
+          data-reason="без повода">
+          <img
+            src="https://cdn.flor2u.ru/images/uploads/conversion/be3/be3daf3c18e823c38aff9ec96c4c7297/be3daf3c18e823c38aff9ec96c4c7297-flor.detail.gallery.jpg">
+          <div class="stars">★★★★★</div>
+          <p class="title">Влюблённость</p>
+          <p class="skidka">2800 сом</p>
+          <p class="price">1270 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="лилий" data-color="белые" data-for="папе" data-reason="День рождения">
+          <img
+            src="https://grizly.club/uploads/posts/2023-08/1691896594_grizly-club-p-kartinki-buket-pionov-bez-fona-1.jpg"
+            alt="Мечтательница">
+          <div class="stars">★★★★★</div>
+          <p class="title">Мечтательница</p>
+          <p class="price">2280 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="лилии" data-color="белые" data-for="маме" data-reason="8 марта">
+          <img src="https://sarflowers.ru/UserFiles/Image/Bukety_iz_cvetov/img307_82841.jpg"
+            alt="Корзина солнечного настроения">
+          <div class="stars">★★★★★</div>
+          <p class="title">Корзина солнечного настроения</p>
+          <p class="price">1680 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="орхидей" data-color="красные" data-for="сестре"
+          data-reason="без повода">
+          <img src="https://rus-buket.ru/files/icons/icon-8213.png" alt="Цветочная клумба">
+          <div class="stars">★★★★★</div>
+          <p class="title">Цветочная клумба</p>
+          <p class="price">1270 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="альстромерии" data-color="розовые" data-for="маме"
+          data-reason="день рождения">
+          <img src="https://cdn.proflowers.ua/upload/images/product/346_0.jpg?t=1634907516" alt="101 роза">
+          <div class="stars">★★★★★</div>
+          <p class="title">101 красная роза</p>
+          <p class="skidka">2800 сом</p>
+          <p class="price">2280 сом </p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="пионы" data-color="белые" data-for="папе" data-reason="без повода">
+          <img src="https://uchaly.ultraflowers.ru/wp-content/uploads/2021/04/Buket-Okean-tsvetov.jpg"
+            alt="25 розовых пионовидных роз">
+          <div class="stars">★★★★★</div>
+          <p class="title">25 розовых пионовидных роз</p>
+          <p class="price">1680 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="ризуля" data-color="красные" data-for="сестре" data-reason="8 марта">
+          <img src="https://ultraflowers.ru/wp-content/uploads/2018/04/buket-3.jpg">
+          <div class="stars">★★★★★</div>
+          <p class="title">Влюблённость</p>
+          <p class="skidka">2800 сом</p>
+          <p class="price">1270 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="роз" data-color="белые" data-for="маме" data-reason="8 марта">
+          <img src="https://cvety-deshevo.ru/wa-data/public/shop/products/80/17/1780/images/5056/5056.200@2x.jpg"
+            alt="Мечтательница">
+          <div class="stars">★★★★★</div>
+          <p class="title">Мечтательница</p>
+          <p class="price">2280 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="лилии" data-color="розовые" data-for="сестре" data-reason="без повода">
+          <img
+            src="https://www.floramarkt.su/upload/resize_cache/iblock/a3d/1000_1000_140cd750bba9870f18aada2478b24840a/a3d7724843d6182d46ea8c52e60788d4.jpg"
+            alt="Корзина солнечного настроения">
+          <div class="stars">★★★★★</div>
+          <p class="title">Корзина солнечного настроения</p>
+          <p class="price">1680 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+        <div class="product-card" data-category="альстромерии" data-color="белые" data-for="маме" data-reason="8 марта">
+          <img src="https://flowers-country.ru/wp-content/uploads/2018/01/Buket_s_Rozovymi_Pionami_2.jpg"
+            alt="Цветочная клумба">
+          <div class="stars">★★★★★</div>
+          <p class="title">Цветочная клумба</p>
+          <p class="price">1270 сом</p>
+          <button>Заказать</button>
+          <a class="fast-order" href="/Flowers-1/pages/Oformit/oformit.html">Быстрый заказ</a>
+        </div>
+
+
+
+      </div>
+    </main>
+  </div>
+
+
+  <div class="more">
+    <button id="loadMore">Ещё 16 товаров</button>
+  </div>
+
+
+
+    <footer>
+        <div class="flower-footer">
+            <img src="/Flowers-1/svg/flower.svg" alt="">
+            <div class="links">
+                <a href="./pages/Katalog/katalog.html">Каталог товаров</a>
+                <a href="#forum">Форум</a>
+                <a href="#otzyvy">Отзывы</a>
+                <a href="#akcii">Акции</a>
+                <a href="#novosti">Новости</a>
+                <a href="#info">Информация</a>
+            </div>
+
+            <div class="cards">
+                <a href="https://mbank.kg" class="card mbank">
+                    <img src="https://play-lh.googleusercontent.com/xf5_bSz5pNxQHd2K9yig3wM8LAaDigaLhMWdjsVKwSPW0CoyFXoJNUr7Iix1hzTgyg0"
+                        alt="M‑Bank">
+                    <div class="card-info">
+                        <h3>M‑Bank</h3>
+                        <p>Цифровой банк Кыргызстана</p>
+                    </div>
                 </a>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <a href="https://dengi.kg" class="card odengi">
+                    <img src="https://knews.kg/wp-content/uploads/2018/03/O-newlogo-white.png" alt="O!Деньги">
+                    <div class="card-info">
+                        <h3>O!Деньги</h3>
+                        <p>Платежная система и кошелёк</p>
+                    </div>
+                </a>
             </div>
+
         </div>
-    </header>
+    </footer>
+
+
+  <script src="katalog.js"></script>
 </body>
+
 </html>

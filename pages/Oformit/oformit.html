@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <link rel="stylesheet" href="oformit.css">
+
+
+    <header>
+        <div class="top-header">
+            <div class="header container">
+
+                <div class="header-left">
+                    <span>Валюта</span><select>
+                        <option value="">ГРН</option>
+                        <option value="">РУБЛЬ</option>
+                    </select>
+
+                    <span>Язык</span><select>
+                        <option value="">RU</option>
+                        <option value="">ENG</option>
+                    </select>
+
+                    <span>Город</span> <select>
+                        <option value="">Киев</option>
+                        <option value="">Москва</option>
+                    </select>
+                </div>
+                <div class="header-right">
+                    <div>
+                        <img src="/Flowers-1/svg/heart.svg" alt="">
+                        <span>Закладки</span>
+                    </div>
+                    <div>
+                        <img src="/Flowers-1/svg/car.svg" alt="">
+                        <span>Доставка и оплата</span>
+                    </div>
+                    <div>
+                        <img src="/Flowers-1/svg/contact.svg" alt="">
+                        <span>Контакты</span>
+                    </div>
+                    <span class="entrance"><img src="/Flowers-1/svg/human.svg" alt="">Вход <img
+                            src="/Flowers-1/svg/line.svg" alt="">
+                        Регистрация</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="yldyi-header container">
+            <div class="yldyi-header1">
+                <a href="/Flowers-1/home.html">
+                    <img src="/Flowers-1/svg/flower.svg" alt="">
+                </a>
+
+                <div class="input">
+                    <input type="text" placeholder="Поиск по товаром">
+                    <img src="/Flowers-1/svg/search.svg" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="/Flowers-1/svg/contac..svg" alt="">
+                    <img src="/Flowers-1/svg/instagram.svg" alt="">
+                    <img src="/Flowers-1/svg/facebook.svg" alt="">
+                    <p>+38 (067) 829 30 30</p>
+                    <img src="/Flowers-1/svg/heart1.svg" alt="">
+
+                    <img src="/Flowers-1/svg/bag.svg" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="nav">
+            <a href="">
+                <li>Каталог товаров</li>
+            </a>
+            <li>Форум</li>
+            <li>Отзывы</li>
+            <li>Акции</li>
+            <li>Новости</li>
+            <li>Информация</li>
+        </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Оформление заказа</h1>
+
+        <div class="form-container">
+
+            <div class="form-block">
+                <h2>1. Контакты получателя</h2>
+                <input type="text" placeholder="Имя получателя*" required>
+                <input type="text" placeholder="Регион*" value="Киев" required>
+                <input type="text" placeholder="Телефон получателя*" required>
+                <input type="text" placeholder="Адрес*" required>
+                <input type="date" value="2021-02-22">
+                <select>
+                    <option>6:00 - 9:00</option>
+                    <option>9:00 - 12:00</option>
+                    <option>12:00 - 15:00</option>
+                </select>
+            </div>
+
+            <div class="form-block">
+                <h2>2. Контакты отправителя</h2>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Телефон">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="form-block">
+                <h2>3. Детали доставки</h2>
+                <label><input type="checkbox" checked> Доставка с сюрпризом</label>
+                <label><input type="checkbox" checked> Фотоотчет (+15 грн)</label>
+                <label><input type="checkbox"> Добавить вазу (+249 грн)</label>
+                <label><input type="checkbox"> Напомнить о событии</label>
+                <label><input type="checkbox"> Открытка</label>
+                <label><input type="checkbox"> Визитка</label>
+                <label><input type="checkbox"> Полноразмерная открытка (+79 грн)</label>
+                <input type="text" placeholder="Повод для открытки">
+                <textarea placeholder="Текст открытки (до 70 символов)" maxlength="70"></textarea>
+            </div>
+
+            <div class="order-summary">
+                <h3>Ваш заказ</h3>  
+                <ul>
+                    <li>25 жёлтых тюльпанов — 2 шт — 5558 грн</li>
+                    <li>25 розовых пионовидных роз — 1 шт — 254 грн</li>
+                    <li>Мечтательница — 1 шт — 254 грн</li>
+                </ul>
+                <p><strong>Сумма заказа:</strong> 6000 грн</p>
+                <p><strong>Доставка:</strong> 100 грн</p>
+                <p><strong>Фотоотчет:</strong> 15 грн</p>
+                <hr>
+                <h3>Всего: 5304 грн</h3>
+                <button id="orderBtn" class="btn">Оформить заказ</button>
+                <input type="text" placeholder="Введите код купона">
+                <input type="text" placeholder="Введите номер подарочного сертификата">
+                <button class="btn">Применить</button>
+            </div>
+
+            <div id="success-message" class="success-message">
+                Вы оформили заказ!
+            </div>
+
+        </div>
+
+   
+
+    </div>
+
+
+
+    <script src="oformit.js"></script>
 </body>
+
 </html>
